@@ -1,2 +1,3 @@
-# Sebekdots-sway
-Última versión de mis dotfiles de Swaywm en Arch Linux
+# Sebekdots 2.2-SE (Sway Edition)
+
+
