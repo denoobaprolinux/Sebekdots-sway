@@ -24,6 +24,7 @@ Estos son los mismos dotfiles que uso en Hyprland, ¡portados para Swaywm! Está
 - grim
 - slurp
 - swappy
+- udiskie
 
 Swww lo vas a necesitar sólo para generar el wallpaper, pero el gestor de wallpapers es el que viene incluido con Sway (configuración por arreglar, pronto)
 
