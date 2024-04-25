@@ -7,26 +7,22 @@ Estos son los mismos dotfiles que uso en Hyprland, ¡portados para Swaywm! Está
 
 ## Dependencias
 
-- Waybar
-- Sway Notification Center
-- pacman-contrib
-- trizen
-- nm-applet
-- [swaylock-effects](https://github.com/mortie/swaylock-effects) (AUR)
-- nwg-menu
-- rofi
-- blueman
-- kooha
-- Fuente "neuropolitical" (está en este repositorio)
-- Kitty
-- Pywall
-- swww (AUR)
-- grim
-- slurp
-- swappy
-- udiskie
+**Van a copiar en una terminal los siguientes comandos:**
 
-Swww lo vas a necesitar sólo para generar el wallpaper, pero el gestor de wallpapers es el que viene incluido con Sway (configuración por arreglar, pronto)
+### Con pacman:
+
+`sudo pacman -S waybar nwg-menu swaync rofi swww grim swappy slurp network-manager-applet pacman-contrib trizen blueman kooha udiskie`
+
+### Con Yay (AUR helper):
+
+`yay -S swaylock-effects pywal` 
+
+Deben instalar la versión normal de Pywal, no la de 16 colores
+
+# Fuente "Neuropolitical"
+
+https://www.dafont.com/neuropolitical.font 
+Incluyo el archivo en mi repositorio para descarga
 
 ## Importante
 
