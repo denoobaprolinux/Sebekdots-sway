@@ -32,13 +32,7 @@
       "run-on": "action"
     }
   },
-  "notification-visibility": {
-    "example-name": {
-      "state": "muted",
-      "urgency": "Low",
-      "app-name": "Spotify"
-    }
-  },
+ },
   "widgets": [
     "buttons-grid",
     "volume",
