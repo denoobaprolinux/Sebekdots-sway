@@ -8,10 +8,10 @@
 	"modules-left": [
 		
 		"custom/launcher",
-		"hyprland/workspaces",
 		"custom/updates",
 		"custom/themeswitcher",
-		"custom/wallchange"
+		"custom/wallchange",
+		"sway/workspaces"
 
 	],
 
@@ -23,7 +23,6 @@
 		
 	"modules-right": [
 	
-		"hyprland/window",
 		"pulseaudio",
 		"clock",
 		"tray",
@@ -78,21 +77,22 @@
 		"on-click": "~/.config/waybar/menutop.sh",
 	},
 	
-	"hyprland/workspaces" : {
-        "on-click": "activate",
-        "active-only": false,
-        "all-outputs": true,
-        "format": "{icon}",
-        "format-icons": {
-			"urgent": "󰊠",
-			"active": "󰮯",
-			"default": "󰊠",
-			"empty": ""
-        },
-        "persistent-workspaces": {
-             "*": 10
-        }       
-    },
+	"sway/workspaces": {
+	"disable-scroll": true,
+	"all-outputs": true,
+	"format": "{name}",
+	"format-icons": {
+		"1": "",
+		"2": "",
+		"3": "",
+		"4": "",
+		"5": "",
+		"high-priority-named": [ "1", "2" ],
+		"urgent": "",
+		"focused": "",
+		"default": ""
+	}
+	},
 
 	"clock": {
 		 "format": "{:%I:%M %p}",
@@ -142,29 +142,7 @@
 		
 	},
 
-	"hyprland/window": {
-				"format": "{initialClass}",
-				"tooltip": true,
-				"rewrite": {
-            "firefox": "Mozilla Firefox",
-            "Google-chrome": "Google Chrome",
-            "sublime_text": "Sublime Text",
-            "kitty": "Terminal",
-            "org.gnome.Nautilus": "Archivos",
-            "com.obsproject.Studio": "OBS Studio",
-            "Gimp-2.10": "Gimp",
-            "com.github.tchx84.Flatseal": "Flatseal",
-            "com.github.wwmm.easyeffects": "EasyEffects",
-            "discord": "Discord",
-            "org.gnome.Software": "Tienda de Software",
-            "org.gnome.Music": "Reproductor de Música",
-            "thunderbird": "Thunderbird",
-            "org.telegram.desktop": "Telegram"
-        },
-        "separate-outputs": true
-    },
-
-    "mpris": {
+	"mpris": {
 		"format": "{title} - {artist}",
 		"format-paused": "<i>{title} - {artist}</i>",
 		"interval": 1,
