@@ -5,6 +5,8 @@ _Aspecto de Swaywm con Sebekdots 2.2-SE_
 
 Estos son los mismos dotfiles que uso en Hyprland, ¡portados para Swaywm! Están 100% funcionales, sin embargo si al usarlos consigues un bug, déjamelo saber en "Issues" o deja un comentario en el video de YouTube, y con gusto lo responderé y corregiré el error. 
 
+**Actualización: Agregado nuevo tema, "Mínima" con sus variantes arriba/abajo**
+
 ## Dependencias
 
 **Van a copiar en una terminal los siguientes comandos:**
