@@ -23,10 +23,10 @@
 		
 	"modules-right": [
 	
+		"hyprland/window",
 		"pulseaudio",
 		"clock",
 		"tray",
-		"custom/scleft",
 		"custom/notification"
 				
 	],
@@ -34,7 +34,7 @@
 	"custom/themeswitcher": { 
 	"format": "󰟡",
 		"exec": "echo ; echo Cambiar Tema de Waybar",
-        "on-click": "~/.config/waybar/themes/themeswitcher.sh",
+        "on-click": "~/dotfiles/waybar/themes/themeswitcher.sh",
         "interval" : 86400, // once every day
         "tooltip": true
     },
@@ -42,8 +42,8 @@
     "custom/wallchange": {
         "format": "󰆊 ",
         "exec": "echo ; echo Cambiar Wallpaper",
-        "on-click": "~/.config/waybar/wallpaper.sh select",
-        "on-click-right": "~/.config/waybar/wallpaper.sh",
+        "on-click": "~/dotfiles/waybar/wallpaper.sh select",
+        "on-click-right": "~/dotfiles/waybar/wallpaper.sh",
         "interval" : 86400, // once every day
         "tooltip": true
     },
@@ -53,28 +53,19 @@
         "tooltip-format": "{}",
         "escape": true,
         "return-type": "json",       
-        "exec": "~/.config/waybar/updates.sh",
+        "exec": "~/dotfiles/waybar/updates.sh",
         "restart-interval": 60,
-        "on-click": "kitty -e ~/.config/waybar/installupdates.sh",
+        "on-click": "kitty -e ~/dotfiles/waybar/installupdates.sh",
         "tooltip": false
     },
 
-	"custom/powermenu": {
-		"format": "",
-		"exec": "echo ; echo Sesión...",
-		"on-click": "~/.config/waybar/powerbutton.sh",
-		"interval" : 86400, // once every day
-		"icon-size": 20,
-		"tooltip": true,
-	},
-	
 	"custom/launcher": {
 		"format": "󰣇",
 		"exec": "echo ; echo Aplicaciones",
 		"icon-size": 20,
 		"interval" : 86400, // once every day
 		"tooltip": true,
-		"on-click": "~/.config/waybar/menutop.sh",
+		"on-click": "~/dotfiles/waybar/menutop.sh",
 	},
 	
 	"sway/workspaces": {
@@ -146,16 +137,6 @@
 		"format": "{title} - {artist}",
 		"format-paused": "<i>{title} - {artist}</i>",
 		"interval": 1,
-		"player-icons": {
-			"default": "",
-			"mpv": "🎵"
-		},
-		"status-icons": {
-			"paused": "",
-			"play": "",
-			"previous": "󰒮",
-		},
-		// "ignored-players": ["firefox"]
 	},
 
 	"custom/notification": {
