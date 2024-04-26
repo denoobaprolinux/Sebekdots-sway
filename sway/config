@@ -11,6 +11,11 @@ input * {
     xkb_layout "latam"
     }
 
+# Mouse (Si quieren usar un cursor en especifíco, con un tamaño en específico)
+# Comenten el comando abajo si quieren dejar los valores por defecto del sistema
+
+seat seat0 xcursor_theme Bibata-Original-Classic 20
+
 ### Variables
 
 # Logo key. Use Mod1 for Alt.
