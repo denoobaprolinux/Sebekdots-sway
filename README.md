@@ -1,4 +1,4 @@
-# Sebekdots 2.2-SE (Sway Edition)
+# Sebekdots Sway Edition
 
 ![swappy-20240424_000211](https://github.com/andrewsebek/Sebekdots-sway/assets/121652305/929472d1-c959-45f8-adfa-b249210422c7)
 _Aspecto de Swaywm con Sebekdots 2.2-SE_
