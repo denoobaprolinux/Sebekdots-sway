@@ -7,19 +7,9 @@ Estos son los mismos dotfiles que uso en Hyprland, ¡portados para Swaywm! Está
 
 **Actualización: Agregado nuevo tema, "Mínima" con sus variantes arriba/abajo**
 
-## Dependencias
+## Pasos para instalar Sebekdots-Sway
 
-**Van a copiar en una terminal los siguientes comandos:**
-
-### Con pacman:
-
-`sudo pacman -S waybar nwg-look nwg-menu swaync rofi swww grim swappy slurp network-manager-applet pacman-contrib trizen blueman kooha udiskie`
-
-### Con Yay (AUR helper):
-
-`yay -S swaylock-effects pywal` 
-
-Deben instalar la versión normal de Pywal, no la de 16 colores
+Visita la [Wiki](https://github.com/andrewsebek/Sebekdots-sway/wiki)
 
 # Fuente "Neuropolitical"
 
