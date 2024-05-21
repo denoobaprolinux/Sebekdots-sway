@@ -78,11 +78,11 @@ sleep 1
 # ----------------------------------------------------- 
 newwall=$(echo $wallpaper | sed "s|~/Imágenes/Wallpapers/||g")
 
-# swww img ~/.cache/current_wallpaper.jpg \
-#     --transition-bezier .43,1.19,1,.4 \
-#     --transition-fps=60 \
-#     --transition-type="simple" \
-#     --transition-duration=0.5 \
+swww img ~/.cache/current_wallpaper.jpg \
+     --transition-bezier .43,1.19,1,.4 \
+     --transition-fps=60 \
+     --transition-type="simple" \
+     --transition-duration=0.5 \
 #     --transition-pos "$( hyprctl cursorpos )"
 
 # ----------------------------------------------------- 
