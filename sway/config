@@ -2,6 +2,8 @@
 
 # Aplicaciones al inicio
 
+exec swww query || swww-daemon --format xrgb
+exec swww img ~/.cache/current_wallpaper.jpg
 exec ~/dotfiles/waybar/launch.sh
 exec /usr/bin/easyeffects --gapplication-service
 exec nm-applet --indicator
@@ -36,7 +38,7 @@ set $term kitty
 
 # Wallpaper (NO MODIFICAR, GENERADO DINÁMICAMENTE POR LOS SCRIPTS DE SEBEKDOTS 2.2-SE)
 
-output * bg /home/sebek/.cache/current_wallpaper.jpg fill
+# output * bg /home/sebek/.cache/current_wallpaper.jpg fill
 
 #
 # Configuración de ejemplo para la resolución de la pantalla:
