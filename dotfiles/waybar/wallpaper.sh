@@ -91,11 +91,19 @@ sleep 1
 # ----------------------------------------------------- 
 newwall=$(echo $wallpaper | sed "s|~/Imágenes/Wallpapers/||g")
 
-swww img ~/.cache/current_wallpaper.jpg \
-     --transition-bezier .43,1.19,1,.4 \
-     --transition-fps=60 \
-     --transition-type="simple" \
-     --transition-duration=0.5 \
+swww img ~/.cache/current_wallpaper.jpg\
+    --transition-bezier .43,1.19,1,.4\
+    --transition-fps=30\
+    --transition-step=20\
+    --transition-angle=0\
+    --transition-type="any"\
+    --transition-duration=0.5\
+
+# ----------------------------------------------------- 
+# Envía la notificación
+# ----------------------------------------------------- 
+
+# notify-send "Colores y Fondo de Pantalla" "con imagen $newwall"
 
 
 
