@@ -15,7 +15,9 @@
 		"custom/launcher",
 		"custom/updates",
 		"custom/themeswitcher",
-		"custom/wallchange"		
+		"custom/wallchange",
+		"sway/window"
+
 	],
 
 	"modules-center": [

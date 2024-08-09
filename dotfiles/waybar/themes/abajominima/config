@@ -6,14 +6,14 @@
 	"height": 12,
 
 	"include": ["~/dotfiles/waybar/themes/modulesbottom.json"],
-		
+			
 	"modules-left": [
 		
 		"custom/launcher",
+		"sway/workspaces",
 		"custom/updates",
 		"custom/themeswitcher",
-		"custom/wallchange",
-		"sway/workspaces"
+		"custom/wallchange"
 
 	],
 
@@ -25,7 +25,7 @@
 		
 	"modules-right": [
 	
-		"hyprland/window",
+		"sway/window",
 		"pulseaudio",
 		"clock",
 		"tray",

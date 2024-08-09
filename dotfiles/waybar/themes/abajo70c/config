@@ -6,13 +6,15 @@
 	"height": 14,
 
 	"include": ["~/dotfiles/waybar/themes/modulesbottom.json"],
-		
+			
 	"modules-left": [
 		
 		"custom/launcher",
 		"custom/updates",
 		"custom/themeswitcher",
-		"custom/wallchange"		
+		"custom/wallchange",
+		"sway/window"
+
 	],
 
 	"modules-center": [
@@ -28,5 +30,6 @@
 		"tray",
 		"custom/notification"
 				
-	]
+	],
+
 }

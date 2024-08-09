@@ -10,10 +10,10 @@
 	"modules-left": [
 		
 		"custom/launcher",
+		"sway/workspaces",
 		"custom/updates",
 		"custom/themeswitcher",
-		"custom/wallchange",
-		"sway/workspaces"
+		"custom/wallchange"
 
 	],
 
@@ -25,6 +25,7 @@
 		
 	"modules-right": [
 	
+		"sway/window",
 		"pulseaudio",
 		"clock",
 		"tray",

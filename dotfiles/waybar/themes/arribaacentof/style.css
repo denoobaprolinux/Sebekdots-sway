@@ -46,7 +46,8 @@ window#waybar {
     padding: 0px 21px 0px 18px;
     margin: 3px 3px 3px 3px;
     opacity:1.0;
-    border:2px solid @border-color;
+    border:3px solid orange;
+    transition: all 0.3s ease-in-out;
     
 }
 
@@ -59,7 +60,7 @@ window#waybar {
     padding: 0px 21px 0px 18px;
     margin: 3px 3px 3px 3px;
     opacity:1.0;
-    border:2px solid @border-color;
+    border:3px solid @border-color;
 }
 
 #custom-notification.dnd-none,
@@ -72,7 +73,7 @@ window#waybar {
     padding: 0px 21px 0px 18px;
     margin: 3px 3px 3px 3px;
     opacity:1.0;
-    border:2px solid @border-color;
+    border:3px solid red;
     
 }
 
@@ -85,16 +86,18 @@ window#waybar {
     padding: 0px 22px 0px 15px;
     margin: 3px 3px 3px 3px;
     opacity:1.0;
-    border:2px solid @border-color;
+    border:3px solid @border-color;
+    transition: all 0.3s ease-in-out;
 }
 
 #custom-updates {
 
     color: white;
     font-size:12px;
-    padding: 2px 10px 0px 10px;
+    padding: 0px 5px 0px 10px;
     background-color: alpha(@modules, 0.7);
     margin: 10px 0px 10px 0px;
+    transition: all 0.3s ease-in-out;
 }
 
 #clock {
@@ -104,25 +107,50 @@ window#waybar {
     padding: 0px 10px 0px 10px;
     background-color: alpha(@modules, 0.7);
     margin: 10px 0px 10px 0px;
+    transition: all 0.3s ease-in-out;
 }
 
 
 #custom-themeswitcher,
 #custom-wallchange,
+#custom-options,
 #tray
 {
     
     color: aliceblue;
     padding: 0px 10px 0px 10px;
+    transition: all 0.3s ease-in-out;
     
 }
 
 #pulseaudio,
 #memory,
-#cpu {
+#cpu
+{
 
     font-size: 14px;
     padding: 0px 10px 0px 10px;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+#window {
+    
+    background-color: @background-module;
+    font-size: 12px;
+    border-radius: 25px;
+    padding: 0px 10px 0px 10px;
+    margin: 3px 3px 3px 3px;
+    opacity:0.8;
+    border:2px solid @border-color;
+    color:#FFFFFF;
+}
+
+window#waybar.empty #window {
+    
+    background-color: transparent;
+    border: 0px;
+
 }
 
 #workspaces {
@@ -136,8 +164,6 @@ window#waybar {
     font-style: normal;
     opacity:0.8;
     font-size:16px;
-    color:#FFFFFF;
-    
 }
 
 #workspaces button {
@@ -145,20 +171,35 @@ window#waybar {
     margin: 3px 3px;
     border-radius: 15px;
     border:0px;
-    color: @color7;
+    color: @color13;
     background-color: transparent;
-    transition: all 0.3s ease-in-out;
+    /*transition: all 0.3s ease-in-out;*/
     opacity:1.0;
 }
 
 #workspaces button.focused {
-    color: orange;
+    color: #FFF;
+    background-color: @button-hover;
+    /*min-width: 40px;*/
     transition: all 0.3s ease-in-out;
     opacity:1.0;
 }
 
+#workspaces button.empty {
+    color: #FFFFFF;
+    /*background: @button-color;
+    border-radius: 15px;
+    border: 1px solid @border-color;
+    min-width: 40px;
+    transition: all 0.3s ease-in-out;*/
+    opacity:1.0;
+}
+
 #workspaces button:hover {
-    color: @button-hover;
+
+    color: orange;
+    opacity:1.0;
+    background-color: @button-hover;
     transition: all 0.3s ease-in-out;
 }
 
@@ -177,7 +218,7 @@ tooltip label {
 }
 
 #pulseaudio {
-    color: @color7;
+    color: @color8;
     padding: 0px 10px 0px 15px;
     background-color: alpha(@modules, 0.7);
     margin: 10px 0px 10px 0px;
@@ -200,13 +241,12 @@ tooltip label {
     color: #b58900;
 }
 
+/* Color de resaltado de los elementos de Waybar */
+
 #custom-updates:hover,
 #custom-wallchange:hover,
 #custom-themeswitcher:hover,
-#custom-notification:hover,
-#custom-notification.none:hover,
-#custom-notification.dnd-none:hover,
-#custom-notification.dnd-inhibited-none:hover,
+#custom-options:hover,
 #pulseaudio:hover,
 #clock:hover {
 
@@ -218,6 +258,16 @@ tooltip label {
 
     color: #58c1f5;
     transition: all 0.3s ease-in-out;
+    border:3px solid #58c1f5;
 }
 
+#custom-notification:hover,
+#custom-notification.none:hover,
+#custom-notification.dnd-none:hover,
+#custom-notification.dnd-inhibited-none:hover {
 
+    color: orange;
+    transition: all 0.3s ease-in-out;
+    border:3px solid orange;
+
+}

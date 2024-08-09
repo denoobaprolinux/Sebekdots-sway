@@ -1,16 +1,40 @@
-# SEBEKDOTS 2.2-SE (Sway Edition)
+#  ____       _          _       _       _       
+# / ___|  ___| |__   ___| | ____| | ___ | |_ ___ 
+# \___ \ / _ \ '_ \ / _ \ |/ / _` |/ _ \| __/ __|
+#  ___) |  __/ |_) |  __/   < (_| | (_) | |_\__ \
+# |____/ \___|_.__/ \___|_|\_\__,_|\___/ \__|___/
+
+#  ____                     
+# / ___|_      ____ _ _   _ 
+# \___ \ \ /\ / / _` | | | |
+#  ___) \ V  V / (_| | |_| |
+# |____/ \_/\_/ \__,_|\__, |
+#                     |___/ 
 
 # Aplicaciones al inicio
 
 exec swww query || swww-daemon --format xrgb
-exec swww img ~/.cache/current_wallpaper.jpg
-exec ~/dotfiles/waybar/launch.sh
+exec ~/dotfiles/waybar/wallpaper.sh init
 exec /usr/bin/easyeffects --gapplication-service
 exec nm-applet --indicator
 exec udiskie -s
+exec swayosd-server
+
+# Configuración de Pywal
+
+include ~/.cache/wal/colors-sway
+
+# Teclado y Touchpad (configuración para laptop)
 
 input * {
     xkb_layout "latam"
+    }
+
+input "type:touchpad" {
+    dwt enabled
+    tap enabled
+    middle_emulation enabled
+    pointer_accel 0.5 # set mouse sensitivity (between -1 and 1)
     }
 
 # Mouse (Si quieren usar un cursor en especifíco, con un tamaño en específico)
@@ -64,14 +88,16 @@ set $term kitty
 
 ### Gaps entre ventanas
 
-gaps inner 10
+gaps inner 5
 gaps outer 5
 
 ### Propiedades de las Ventanas
 
-default_border none
+default_border pixel 2
 
-### Key bindings
+client.focused $color10 $color10 $color10 $color10
+
+### Keybindings
 #
 # Básicos:
 #
@@ -94,7 +120,6 @@ default_border none
     # Recargar la configuración de Sway
 
     bindsym $mod+Shift+c reload
-
 
 # Moverse usando el teclado:
 #
@@ -140,6 +165,20 @@ default_border none
     bindsym $mod+8 workspace number 8
     bindsym $mod+9 workspace number 9
     bindsym $mod+0 workspace number 10
+
+    # O usa las teclas de Función (F1 a F10)
+
+    #bindsym F1 workspace number 1
+    #bindsym F2 workspace number 2
+    #bindsym F3 workspace number 3
+    #bindsym F4 workspace number 4
+    #bindsym F5 workspace number 5
+    #bindsym F6 workspace number 6
+    #bindsym F7 workspace number 7
+    #bindsym F8 workspace number 8
+    #bindsym F9 workspace number 9
+    #bindsym F10 workspace number 10
+    
     
     # Mueve ventana a espacio de trabajo seleccionado y va a ese espacio de trabajo
     
@@ -193,12 +232,12 @@ default_border none
 
     # Mover la ventana actualmente enfocada al scratchpad
     
-    bindsym $mod+Shift+minus move scratchpad
+    bindsym $mod+Shift+s move scratchpad
 
     # Mostrar la siguiente ventana del scratchpad u ocultar la ventana del scratchpad enfocada.
     # Si hay varias ventanas del scratchpad, este comando las recorre.
     
-    bindsym $mod+minus scratchpad show
+    bindsym $mod+Alt+s scratchpad show
 #
 # Redimensionar contenedores:
 #
@@ -236,6 +275,7 @@ bindsym $mod+n exec swaync-client -t
 
 bindsym Print exec grim - | swappy -f -                    # toda la pantalla
 bindsym $mod+Print exec grim -g "$(slurp)" - | swappy -f - # área seleccionada 
+bindsym Control+Print exec mkdir -p ~/Imágenes/Capturas && ~/dotfiles/waybar/grimblast.sh save screen ~/Imágenes/Capturas/Sway_"$(date '+%Y-%m-%d_%H.%M.%S')".png
 
 # Cargar barra Waybar por defecto
 
@@ -243,10 +283,13 @@ bindsym $mod+Shift+q exec ~/dotfiles/waybar/load.sh
 
 # Reiniciar Waybar
 
-bindsym $mod+Shift+w exec ~/dotfiles/waybar/reload.sh 
+bindsym $mod+Shift+r exec ~/dotfiles/waybar/reload.sh 
 
-# Bloquear Pantalla
+# Keybinds para SwayOSD
 
-bindsym $mod+Shift+b exec ~/dotfiles/waybar/lock.sh
+bindsym XF86AudioRaiseVolume exec swayosd-client --output-volume raise
+bindsym XF86AudioLowerVolume exec swayosd-client --output-volume lower
+bindsym XF86MonBrightnessUp exec swayosd-client --brightness +10
+bindsym XF86MonBrightnessDown exec swayosd-client --brightness -10
 
 include /etc/sway/config.d/*

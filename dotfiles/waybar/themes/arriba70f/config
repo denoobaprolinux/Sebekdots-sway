@@ -9,13 +9,15 @@
 	"margin-top": 5,
 
 	"include": ["~/dotfiles/waybar/themes/modulestop.json"],
-	
+		
 	"modules-left": [
 		
 		"custom/launcher",
 		"custom/updates",
 		"custom/themeswitcher",
-		"custom/wallchange"		
+		"custom/wallchange",
+		"sway/window"
+
 	],
 
 	"modules-center": [

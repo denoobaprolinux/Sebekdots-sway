@@ -8,14 +8,16 @@
 	"margin-right": 10,
 	"margin-bottom": 5,
 
-	"include": ["~/dotfiles/waybar/themes/modulesbottom.json"],
+	"include": ["~/dotfles/waybar/themes/modulesbottom.json"],
 	
 	"modules-left": [
 		
 		"custom/launcher",
 		"custom/updates",
 		"custom/themeswitcher",
-		"custom/wallchange"		
+		"custom/wallchange",
+		"sway/window"
+
 	],
 
 	"modules-center": [
@@ -31,5 +33,6 @@
 		"tray",
 		"custom/notification"
 				
-	]
+	],
+
 }
