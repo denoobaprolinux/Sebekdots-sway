@@ -30,6 +30,7 @@ Actualización de mis dotfiles para Sway, con un montón de cambios tanto en lo 
 - Swaync-git es el demonio de notificaciones: con este programa se corrige un error que había en el centro de notificaciones que causaba que apareciera un reproductor por duplicado. Los temás "Mínima" ahora pueden funcionar sin bugs.
 - Eliminados los temas "Modular", la geometría de los temas desperdiciaba demasiado espacio en pantalla.
 - Actualización del código de configuración de Sway, permitiendo el uso del touchpad (en el caso de las laptops) y permitiendo aceleración del movimiento del puntero del mouse.
+- Indicadores en Pantalla con SwayOSD: una muy útil pieza de software que permite generar indicadores en pantalla cada vez que presiones CapsLock/NumLock/ScrollLock/Subir o bajar volumen/brillo de pantalla
 
 ## Pasos para instalar Sebekdots 3.3.1 Sway Edition
 
