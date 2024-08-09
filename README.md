@@ -3,13 +3,16 @@
 ![Sway_2024-08-08_23 54 31](https://github.com/user-attachments/assets/533c9c71-364a-4e59-ae5d-82336ceeaa85)
 _Aspecto de Sway con Sebekdots 3.3.1_
 
+
 ![Sway_2024-08-08_23 54 45](https://github.com/user-attachments/assets/4bef33e8-fb92-42ea-90bb-11004bbd5be4)
 _Selector de Temas de Waybar_
+
 
 ![Sway_2024-08-08_23 54 54](https://github.com/user-attachments/assets/7ce41396-a6ad-4c15-9985-d3a3bddd1a07)
 _Selector de Wallpapers_
 
-![Sway_2024-08-08_04 58 05](https://github.com/user-attachments/assets/4e7ad641-25ba-4986-9596-7e36046f2614)
+
+![Sway_2024-08-08_23 54 16](https://github.com/user-attachments/assets/3ef4e86d-d9e2-4e15-a5f2-28dbc9829f3a)
 _Aspecto de los menús y el Centro de Notificaciones_
 
 # Sebekdots 3.3.1 Sway Edition
