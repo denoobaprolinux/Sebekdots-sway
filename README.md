@@ -32,6 +32,11 @@ Actualización de mis dotfiles para Sway, con un montón de cambios tanto en lo 
 - Actualización del código de configuración de Sway, permitiendo el uso del touchpad (en el caso de las laptops) y permitiendo aceleración del movimiento del puntero del mouse.
 - Indicadores en Pantalla con SwayOSD: una muy útil pieza de software que permite generar indicadores en pantalla cada vez que presiones CapsLock/NumLock/ScrollLock/Subir o bajar volumen/brillo de pantalla
 
+### Actualización de Sebekdots 3.3.2
+
+- Tema nuevo para Waybar - "Powerline" (Arriba/Abajo)
+- El script de cambio de Wallpapers ahora permite tener GIFs como fondos de pantalla animados
+ 
 ## Pasos para instalar Sebekdots 3.3.1 Sway Edition
 
 Visita la [Wiki](https://github.com/andrewsebek/Sebekdots-sway/wiki)
