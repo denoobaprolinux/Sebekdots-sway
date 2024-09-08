@@ -82,6 +82,22 @@ window#waybar > box {
     transition: all 0.3s ease-in-out;
 }
 
+#custom-updates.green {
+    color: #00ff00; /* Verde para pocas actualizaciones */
+}
+
+#custom-updates.yellow {
+    color: #ffff00; /* Amarillo para algunas actualizaciones */
+}
+
+#custom-updates.red {
+    color: #ff0000; /* Rojo para muchas actualizaciones */
+}
+
+#custom-updates.white {
+    color: @color7; /* Blanco por defecto */
+}
+
 #workspaces button * { /* Propiedades generales de los espacios de trabajo */
 	padding:0px 0px 0px 0px;
 	font-size: calc(6px * 2.8);
