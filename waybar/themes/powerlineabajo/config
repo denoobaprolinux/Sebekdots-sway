@@ -1,3 +1,5 @@
+// -*- mode: json -*-
+
 {
     "layer": "top",
     "position": "bottom",
@@ -281,7 +283,10 @@
     },
     "custom/left5": {
         "format": "",
-        "tooltip": false
+        "on-click": "playerctl previous",
+        "exec": "echo ; echo Anterior",
+        "interval" : 86400, // once every day
+        "tooltip": true
     },
     "custom/left6": {
         "format": "",
@@ -303,7 +308,10 @@
     },
     "custom/right2": {
         "format": "",
-        "tooltip": false
+        "on-click": "playerctl next",
+        "exec": "echo ; echo Siguiente",
+        "interval" : 86400, // once every day
+        "tooltip": true
     },
     "custom/right3": {
         "format": "",

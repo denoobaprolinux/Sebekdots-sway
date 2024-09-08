@@ -278,7 +278,7 @@ tooltip label {
 
 /* ARCH LOGO */
 #custom-left5 {
-    font-size: 16pt;
+    font-size: 10pt;
     font-family: "Neuropolitical";
     color: @arch;
     background: @color0;
@@ -286,7 +286,7 @@ tooltip label {
     margin: 0;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-     
+    transition: all 0.3s ease-in-out;     
 }
 
 #mpris {
@@ -298,11 +298,11 @@ tooltip label {
     padding-left: 4px;
     padding-right: 4px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 5px;    
 }
 
 #custom-right2 {
-    font-size: 16pt;
+    font-size: 10pt;
     font-family: "Neuropolitical";
     color: @arch;
     background: @color0;
@@ -310,6 +310,7 @@ tooltip label {
     margin: 0;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+    transition: all 0.3s ease-in-out;
 }
 
 /* TIME */
@@ -505,6 +506,15 @@ tooltip label {
 #clock:hover {
 
     color: orange;
+    transition: all 0.3s ease-in-out;
+}
+
+#custom-left5:hover,
+#custom-right2:hover {
+
+    font-size: 20px;
+    background: @color0;
+    color: @pulseaudio;
     transition: all 0.3s ease-in-out;
 }
 
