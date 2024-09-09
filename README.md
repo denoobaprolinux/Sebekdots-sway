@@ -10,8 +10,6 @@ _Menú y Centro de Notificaciones_
 ![Sway_2024-09-08_17 43 11](https://github.com/user-attachments/assets/e9d85530-71bc-481b-98f0-d47901ab1646)
 _Tema Powerline Arriba/Abajo_
 
-Actualización de mis dotfiles para Sway, con un montón de cambios tanto en lo visual, como a nivel de funcionalidades:
-
 Actualizaciones acumulativas a mis dotfiles, con la siguiente lista de cambios:
 
 - Los temas "Powerline" (Arriba/Abajo) tienen un nuevo efecto hover en el menú y en el centro de notificaciones
