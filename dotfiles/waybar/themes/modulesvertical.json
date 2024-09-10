@@ -6,10 +6,10 @@
 //                                                        |___/                  
 
 {
-"custom/menu":{
+    "custom/menu":{
         "tooltip":false,
         "format":"󰣇",
-        "on-click":"~/.config/waybar/menuleft.sh",
+        "on-click":"~/dotfiles/waybar/menuleft.sh",
     },
 
     "sway/workspaces" : {
@@ -61,6 +61,14 @@
          "show-passive-items" : false,
          "icon-size": 20,
          "spacing": 0
+    },
+
+    "custom/checkrepos": {
+    "interval": 3600,
+    "exec": "~/dotfiles/waybar/checkrepos.sh",
+    "return-type": "json",
+    "on-click": "~/dotfiles/waybar/sway_updates.sh",
+    "tooltip": true
     },
 
     "custom/themeswitcher": { 
@@ -179,14 +187,14 @@
         },
     },
     
-   "pulseaudio#icon": {
+    "pulseaudio#icon": {
         "format": "{icon}",
         "format-bluetooth": "{icon}",
         "format-bluetooth-muted": "{icon}",
         "format-muted": "󰝟{format_source}",
         "format-source-muted": "",
         "format-icons": {
-            "headphone": ["", "", "󰕾"],
+            "headphone": "",
             "hands-free": "",
             "headset": "",
             "phone": "",
@@ -196,7 +204,6 @@
         },
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
         "on-click-right":"pavucontrol",
-        "class": "{state}"
     },
     
     "custom/notification": {
