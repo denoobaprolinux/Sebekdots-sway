@@ -15,6 +15,7 @@
 @define-color wb-hvr-fg #000;
 /* @define-color wb-hvr-bg #f5c2e7; */
 /* @define-color wb-hvr-fg #313244; */
+@define-color transparent   rgba(0,0,0,0);
 
 
 * {
@@ -147,6 +148,7 @@ tooltip label {
     padding-left: 8px;
     padding-right: 12px;
     transition: all 0.3s ease-in-out;
+    border: 2px solid @transparent;
 }
 
 #custom-right1 {
@@ -249,6 +251,22 @@ tooltip label {
     text-shadow: 1px 0px 2px rgba(0, 0, 0, 1);
 }
 
+#custom-updates.green {
+    color: #00ff00; /* Verde para pocas actualizaciones */
+}
+
+#custom-updates.yellow {
+    color: #ffff00; /* Amarillo para algunas actualizaciones */
+}
+
+#custom-updates.red {
+    color: #ff0000; /* Rojo para muchas actualizaciones */
+}
+
+#custom-updates.white {
+    color: @color7; /* Blanco por defecto */
+}
+
 #custom-options  {
     
     color: aliceblue;
@@ -260,7 +278,7 @@ tooltip label {
 
 /* ARCH LOGO */
 #custom-left5 {
-    font-size: 16pt;
+    font-size: 10pt;
     font-family: "Neuropolitical";
     color: @arch;
     background: @color0;
@@ -268,7 +286,7 @@ tooltip label {
     margin: 0;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-     
+    transition: all 0.3s ease-in-out;     
 }
 
 #mpris {
@@ -280,11 +298,11 @@ tooltip label {
     padding-left: 4px;
     padding-right: 4px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 5px;    
 }
 
 #custom-right2 {
-    font-size: 16pt;
+    font-size: 10pt;
     font-family: "Neuropolitical";
     color: @arch;
     background: @color0;
@@ -292,6 +310,7 @@ tooltip label {
     margin: 0;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+    transition: all 0.3s ease-in-out;
 }
 
 /* TIME */
@@ -440,9 +459,7 @@ tooltip label {
     margin: 0;
     opacity:1.0;
     transition: all 0.3s ease-in-out;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    
+    border: 2px solid @transparent;    
 }
 
 #custom-notification.none {
@@ -454,9 +471,8 @@ tooltip label {
     padding: 0px 12px 0px 10px;
     margin: 0;
     opacity:1.0;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    
+    border: 2px solid @transparent; 
+    transition: all 0.3s ease-in-out     
 }
 
 #custom-notification.dnd-none,
@@ -466,13 +482,13 @@ tooltip label {
     font-size: 18px;
     color: red;
     /*border-radius: 20px;*/
-    padding: 0px 12px 0px 10px;
+    padding: 0px 14px 0px 10px;
     margin: 0;
     opacity:1.0;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-        
+    border: 2px solid @transparent; 
+    transition: all 0.3s ease-in-out        
 }
+
 #custom-paddr {
     font-size: 15pt;
     color: @main-bg;
@@ -493,14 +509,21 @@ tooltip label {
     transition: all 0.3s ease-in-out;
 }
 
+#custom-left5:hover,
+#custom-right2:hover {
+
+    font-size: 20px;
+    background: @color0;
+    color: @pulseaudio;
+    transition: all 0.3s ease-in-out;
+}
+
 #custom-launcher:hover {
 
     color: #58c1f5;
     transition: all 0.3s ease-in-out;
-    border-bottom: 2px solid #58c1f5;
-    border-top: 2px solid #58c1f5;
+    border: 2px solid #58c1f5;
     border-radius: 25px;
-    /*border:3px solid #58c1f5;*/
 }
 
 #custom-notification:hover,
@@ -509,10 +532,8 @@ tooltip label {
     color: orange;
     transition: all 0.3s ease-in-out;
     padding: 0px 12px 0px 10px;
-    border-bottom: 2px solid orange;
-    border-top: 2px solid orange;
-    border-radius: 25px;    
-    /*border:3px solid orange;*/
+    border: 2px solid orange;
+    border-radius: 25px;     
 }
 
 #custom-notification.dnd-none:hover,
@@ -520,7 +541,7 @@ tooltip label {
 
     color: red;
     transition: all 0.3s ease-in-out;
-    padding: 0px 12px 0px 10px;
+    padding: 0px 14px 0px 10px;
     border-bottom: 2px solid orange;
     border-top: 2px solid orange;
     border-radius: 25px;  

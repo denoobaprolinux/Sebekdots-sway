@@ -127,6 +127,7 @@ fi
 
 ~/dotfiles/waybar/launch.sh
 sleep 1
+cp ~/.cache/wal/config ~/.config/cava/config
 
 # -----------------------------------------------------
 # Envía la notificación

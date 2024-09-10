@@ -46,3 +46,7 @@ if [[ $themestyle == *abajo* ]]; then
     killall swaync
     swaync -c ~/dotfiles/abajo/config.json -s ~/dotfiles/abajo/style.css &
 fi
+if [[ $themestyle == *izquierda* ]]; then
+    killall swaync
+    swaync -c ~/dotfiles/izquierda/config.json -s ~/dotfiles/izquierda/style.css &
+fi
